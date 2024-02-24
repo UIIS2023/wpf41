@@ -1,0 +1,19 @@
+﻿<Window x:Class="Proba2.Forme.FrmSoba"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proba2.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni Sobu" Height="250" Width="250">
+    <Grid Margin="0,0,0,-16">
+
+
+        <Label Content="Broj Kreveta:" HorizontalAlignment="Left" Margin="21,68,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="unosBrojKreveta" HorizontalAlignment="Left" Height="23" Margin="111,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnSacuvaj_Click" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="156,150,0,0" VerticalAlignment="Top" Width="75" Height="20" />
+        <Label Content="Id Sobe:" HorizontalAlignment="Left" Margin="21,31,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="unosidSobe" HorizontalAlignment="Left" Height="23" Margin="111,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

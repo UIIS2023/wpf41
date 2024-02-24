@@ -1,0 +1,25 @@
+﻿<Window x:Class="Proba2.Forme.FrmTipDestinacije"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proba2.Forme"
+        mc:Ignorable="d"
+            Title="Dodaj/Izmeni Tip Destinacije" Height="250" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Tip:" HorizontalAlignment="Left" Margin="44,61,0,0" VerticalAlignment="Top" Height="26" Width="32"/>
+        <Label Content="Lokacija:" HorizontalAlignment="Left" Margin="44,91,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
+
+        <TextBox x:Name="UnosTip" HorizontalAlignment="Left" Height="23" Margin="124,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnSacuvaj_Click" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="39,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Grid.Column="1" Click="btnOtkazi_Click"/>
+        <ComboBox x:Name="dpLokacija" HorizontalAlignment="Left" Margin="124,95,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" DisplayMemberPath="naziv" SelectedValuePath="idLokacija" />
+        <Label Content="Id Tip:" HorizontalAlignment="Left" Margin="44,26,0,0" VerticalAlignment="Top" Height="26" Width="48"/>
+        <TextBox x:Name="UnosidTipDestinacije" HorizontalAlignment="Left" Height="23" Margin="124,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

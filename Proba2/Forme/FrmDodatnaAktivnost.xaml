@@ -1,0 +1,18 @@
+﻿<Window x:Class="Proba2.Forme.FrmDodatnaAktivnost"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proba2.Forme"
+        mc:Ignorable="d"
+           Title="Dodaj/Izmeni Aktivnost" Height="250" Width="300">
+    <Grid>
+        <Label Content="Tip:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Height="26" Width="32"/>
+        <Label Content="Broj Članova:" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top" Height="26" Width="80"/>
+
+        <TextBox x:Name="unosTip" HorizontalAlignment="Left" Height="23" Margin="110,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="unosBrojClanova" HorizontalAlignment="Left" Height="23" Margin="110,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnSacuvaj_Click" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="190,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnOtkazi_Click" />
+    </Grid>
+</Window>

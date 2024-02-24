@@ -1,0 +1,24 @@
+﻿<Window x:Class="Proba2.Forme.FrmAgent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proba2.Forme"
+        mc:Ignorable="d"
+            Title="Dodaj/Izmeni Agenta" Height="250" Width="300 ">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Ime:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Height="26" Width="32"/>
+        <Label Content="Prezime:" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top" Height="26" Width="55"/>
+        <Label Content="JMBG:" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top" Height="26" Width="43"/>
+
+        <TextBox x:Name="unosIme" HorizontalAlignment="Left" Height="23" Margin="110,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="unosPrezime" HorizontalAlignment="Left" Height="23" Margin="110,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="unosJmbg" HorizontalAlignment="Left" Height="23" Margin="110,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="190,150,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnOtkazi_Click"/>
+    </Grid>
+</Window>

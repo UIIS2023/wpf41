@@ -1,0 +1,29 @@
+﻿<Window x:Class="Proba2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proba2"
+        mc:Ignorable="d"
+        Title="Turisticka Agencija" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnDestinacija" Content="Destinacije" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDestinacija_Click" />
+            <Button x:Name="btnKorisnici" Content="Korisnici" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnKorisnici_Click" />
+            <Button x:Name="btnHoteli" Content="Hoteli" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnHoteli_Click" />
+            <Button x:Name="btnDodatneAktivnosti" Content="Dodatne Aktivnosti" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDodatneAktivnosti_Click" />
+            <Button x:Name="btnAgenti" Content="Agenti" Width="85" Height="40" Click="btnAgenti_Click"/>
+            <Button x:Name="btnOsiguranje" Content="Osiguranja" Width="85" Height="40" Click="btnOsiguranje_Click"/>
+            <Button x:Name="btnTipDestinacije" Content="Tip Destinacije" Width="85" Height="40" Click="btnTipDestinacije_Click"/>
+            <Button x:Name="btnSoba" Content="Soba" Width="85" Height="40" Click="btnSoba_Click"/>
+            <Button x:Name="btnLokacija" Content="Lokacija" Width="85" Height="40" Click="btnLokacija_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="40" VerticalAlignment="Bottom" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnIzmeni_Click" />
+            <Button x:Name="btnIzbrisi" Content="Izbrisi" Width="85" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnIzbrisi_Click" />
+        </StackPanel>
+
+        <DataGrid x:Name="Pocetni" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" Width="auto" IsReadOnly="True" AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single" />
+    </Grid>
+</Window>
